@@ -55,7 +55,7 @@ namespace gist_search
                 .Add("u|user=", "target user name", x => Instance.m_UserName = x)
                 .Add("d|descrption=", "regex of description", x => Instance.m_DescriptionRegex = x)
                 .Add("o|output=", "output file path(default: console)", x => Instance.m_OutputFilePath = x)
-                .Add("e|encoding=", "output file encoding(default: UTF8)", x => Instance.m_OutputFileCodePage = int.Parse(x))
+                .Add("c|codepage=", "output file codepage(default: UTF8)", x => Instance.m_OutputFileCodePage = int.Parse(x))
                 .Add("hasfile=", "regex for filtering by filename", x => Instance.m_FileNameRegex = x)
                 ;
         }
